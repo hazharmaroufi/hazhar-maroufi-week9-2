@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* باکس های ۵ تایی برای نمایش رنگ ها */
+.box {
+  display: grid;
+}
+.box-1 {
+  background-color: #222222;
+}
+.box-2 {
+  background-color: #555555;
+}
+.box-3 {
+  background-color: #888888;
+}
+.box-4 {
+  background-color: #aaaaaa;
+}
+.box-5 {
+  background-color: #dddddd;
+}
+
+/*  استایل نمایش کد رنگ و اسم رنگ */
+.clCode,
+.clName {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* کاور شفاف طوسی پشت کد رنگ و اسم رنگ */
+.textCover {
+  align-self: end;
+  width: 100%;
+  height: 100px;
+  background-color: #0000001d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-left: 16px;
+  padding-top: 20px;
+  border-radius: 32px 32px 0 0;
+}
+
+/* تغییر فضای حاشیه چپ و سایز فونت در موبایل */
+@media (max-width: 600px) {
+  .clCode,
+  .clName {
+    font-size: 12px;
+  }
+  .textCover {
+    padding-left: 8px;
+  }
+}
